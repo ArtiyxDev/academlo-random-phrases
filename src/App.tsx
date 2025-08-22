@@ -12,6 +12,7 @@ interface PhraseItem {
     phrase: string;
     author: string;
 }
+
 function App() {
     const [phrases, setPhrases] = useState<PhraseItem[]>([]);
     const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
