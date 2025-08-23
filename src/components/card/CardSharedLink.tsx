@@ -9,7 +9,7 @@ function CardSharedLink({ url, children }: CardSharedLinkProps) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="btn flex size-10 p-2 shrink justify-center items-center "
+      className="btn flex w-14 h-10 p-2 shrink justify-center items-center "
     >
       {children}
     </a>
