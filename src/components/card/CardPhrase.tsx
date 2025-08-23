@@ -5,7 +5,7 @@ interface CardPhraseProps {
 
 function CardPhrase({ phrase, className = "" }: CardPhraseProps) {
   return (
-    <p className={`text-gray-300 italic ${className}`}>"{phrase}"</p>
+    <blockquote className={`text-gray-300 italic select-text text-xl ${className}`}>"{phrase}"</blockquote>
   )
 }
 
