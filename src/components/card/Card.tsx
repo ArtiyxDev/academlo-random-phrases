@@ -8,8 +8,10 @@ interface CardProps {
 function Card({ children, className = "" }: CardProps) {
   return (
     <>
-      <div className={`bg-stone-800 rounded-lg border border-gray-900 py-2 ${className}`}>
-      {children}
+      <div
+        className={`flex w-full max-w-xl min-w-2xs flex-col items-center justify-center gap-4 rounded-lg border border-gray-900 bg-stone-800 py-2 ${className}`}
+      >
+        {children}
       </div>
     </>
   );
