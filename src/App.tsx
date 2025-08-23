@@ -23,7 +23,7 @@ function App() {
 
   return (
     <Card
-      className={`px-6 py-6 -outline-offset-6 transition-colors duration-200 ${outlineClass} m-auto`}
+      className={`px-6 pt-6 -outline-offset-6 transition-colors duration-200 ${outlineClass} m-auto`}
     >
       <PhraseDisplay phrase={currentPhrase} />
       
@@ -31,7 +31,7 @@ function App() {
         Cambiar frase
       </CardButton>
       
-      <section className="flex justify-center gap-0.5">
+      <section className="flex justify-around items-center w-full gap-4">
         <SocialShare phrase={currentPhrase} />
         <CopyButton isCopied={isCopied} onCopy={handleCopyPhrase} />
       </section>
