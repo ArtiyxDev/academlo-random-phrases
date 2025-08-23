@@ -18,7 +18,7 @@ function SocialShare({ phrase }: SocialShareProps) {
   const shareUrls = generateShareUrls(phrase);
 
   return (
-    <>
+    <div className="flex justify-around gap-2 flex-1">
       <CardSharedLink url={shareUrls.linkedin}>
         <BiLogoLinkedin className="size-full hover:bg-transparent" />
       </CardSharedLink>
@@ -42,7 +42,7 @@ function SocialShare({ phrase }: SocialShareProps) {
       <CardSharedLink url={shareUrls.reddit}>
         <BiLogoReddit className="size-full hover:bg-transparent" />
       </CardSharedLink>
-    </>
+    </div>
   );
 }
 
