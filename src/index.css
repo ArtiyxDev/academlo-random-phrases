@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@layer components {
+  .btn {
+    @apply w-fit rounded-md border border-stone-800 bg-stone-900 px-4 py-2 text-white transition duration-200 hover:cursor-pointer hover:border-blue-500 hover:shadow-lg *:hover:bg-stone-800;
+  }
+}
+
+#root {
+  @apply m-auto flex h-screen items-center justify-center;
+}
+
 body {
-    background-color: #171717;
+  background-color: #171717;
+  @apply h-screen w-screen;
+  user-select: none;
 }
