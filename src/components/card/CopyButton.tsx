@@ -14,12 +14,12 @@ function CopyButton({ isCopied, onCopy }: CopyButtonProps) {
     >
       {isCopied ? (
         <>
-          <BiCheck className="size-full hover:bg-transparent" />
+          <BiCheck className="size-4 hover:bg-transparent" />
           Copiado
         </>
       ) : (
         <>
-          <BiCopy className="size-full hover:bg-transparent" />
+          <BiCopy className="size-4 hover:bg-transparent" />
           Copiar
         </>
       )}
