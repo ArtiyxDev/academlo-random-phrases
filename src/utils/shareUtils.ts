@@ -4,7 +4,7 @@ import type { PhraseItem } from "../types/PhraseItem";
  * Generates share URLs for different social media platforms
  */
 export const generateShareUrls = (phrase: PhraseItem, baseUrl: string = "https://jadm-random-phrases.netlify.app") => {
-  const encodedPhrase = encodeURIComponent(phrase.phrase);
+  const encodedPhrase = encodeURIComponent(phrase.phrase + " by: " + phrase.author);
   const encodedAuthor = encodeURIComponent(phrase.author);
   const encodedUrl = encodeURIComponent(baseUrl);
 
